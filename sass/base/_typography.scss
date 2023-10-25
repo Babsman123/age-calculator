@@ -1,0 +1,39 @@
+.section--age {
+  .input-field {
+    .form-title {
+      font-weight: bold;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+      color: $color-border;
+    }
+    input {
+      font-weight: bold;
+      font-size: 1.6rem;
+      padding: 0rem 0.7rem;
+    }
+  }
+
+  &__details {
+    p {
+      font-size: 5.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+
+      span {
+        color: $color-number;
+        letter-spacing: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .section--age {
+    &__details {
+      p {
+        font-size: 5rem;
+      }
+    }
+  }
+}

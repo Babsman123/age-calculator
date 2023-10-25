@@ -1,0 +1,80 @@
+.section--age {
+  width: 560px;
+  min-height: 50vh;
+
+  margin: 0 auto;
+  padding: 30px 30px;
+  background-color: $body-age;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 6rem;
+
+  .input-field {
+    .form {
+      width: 31%;
+    }
+    input {
+      width: 100%;
+      height: 5vh;
+      background-color: none;
+      border-radius: 0.8rem;
+      border: 1px solid black;
+    }
+  }
+
+  .check-field {
+    margin-top: 4rem;
+
+    position: relative;
+    .border-line {
+      height: 1px;
+      width: 100%;
+      background-color: $color-border;
+    }
+    .btn {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      transform: translate(-0%, -50%);
+      padding: 10px 10px;
+      border: none;
+      border-radius: 5rem;
+      background-color: $color-number;
+      transition: 0.2s all ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-text;
+      }
+    }
+  }
+
+  &__details {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .section--age {
+    width: 300px;
+
+    .input-field {
+      input {
+        height: 7vh;
+      }
+    }
+
+    .check-field {
+      margin-top: 6rem;
+
+      position: relative;
+      .btn {
+        position: absolute;
+        top: 100%;
+        right: 35%;
+        transform: translate(0%, -50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 80%;
+}
+
+@media (max-width: 425px) {
+  .input-field {
+    width: 100%;
+  }
+}

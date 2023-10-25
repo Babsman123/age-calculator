@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  position: relative; }
+
+main {
+  background-color: #dbdbdb;
+  height: 100vh; }
+
+.section--age .input-field .form-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  color: #716f6f; }
+
+.section--age .input-field input {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 0rem 0.7rem; }
+
+.section--age__details p {
+  font-size: 5.5rem;
+  font-weight: bold;
+  letter-spacing: 2px; }
+  .section--age__details p span {
+    color: #854dff;
+    letter-spacing: 8px; }
+
+@media (max-width: 425px) {
+  .section--age__details p {
+    font-size: 5rem; } }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.input-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%; }
+
+@media (max-width: 425px) {
+  .input-field {
+    width: 100%; } }
+
+.section--age {
+  width: 560px;
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 30px 30px;
+  background-color: white;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 6rem; }
+  .section--age .input-field .form {
+    width: 31%; }
+  .section--age .input-field input {
+    width: 100%;
+    height: 5vh;
+    background-color: none;
+    border-radius: 0.8rem;
+    border: 1px solid black; }
+  .section--age .check-field {
+    margin-top: 4rem;
+    position: relative; }
+    .section--age .check-field .border-line {
+      height: 1px;
+      width: 100%;
+      background-color: #716f6f; }
+    .section--age .check-field .btn {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      transform: translate(0%, -50%);
+      padding: 10px 10px;
+      border: none;
+      border-radius: 5rem;
+      background-color: #854dff;
+      transition: 0.2s all ease-in-out;
+      cursor: pointer; }
+      .section--age .check-field .btn:hover {
+        background-color: #141414; }
+  .section--age__details {
+    margin-top: 4rem; }
+
+@media (max-width: 425px) {
+  .section--age {
+    width: 300px; }
+    .section--age .input-field input {
+      height: 7vh; }
+    .section--age .check-field {
+      margin-top: 6rem;
+      position: relative; }
+      .section--age .check-field .btn {
+        position: absolute;
+        top: 100%;
+        right: 35%;
+        transform: translate(0%, -50%); } }
