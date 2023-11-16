@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif; }
 
 body {
   position: relative; }
@@ -70,6 +71,12 @@ main {
     background-color: none;
     border-radius: 0.8rem;
     border: 1px solid black; }
+    .section--age .input-field input:hover {
+      outline: none !important;
+      border-radius: 0.8rem;
+      border: 0.2rem solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to right, #854dff, #141414); }
   .section--age .check-field {
     margin-top: 4rem;
     position: relative; }

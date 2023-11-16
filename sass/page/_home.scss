@@ -20,6 +20,18 @@
       background-color: none;
       border-radius: 0.8rem;
       border: 1px solid black;
+
+      &:hover {
+        outline: none !important;
+        border-radius: 0.8rem;
+        border: 0.2rem solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          to right,
+          $color-number,
+          $color-text
+        );
+      }
     }
   }
 
